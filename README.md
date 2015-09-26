@@ -66,7 +66,7 @@ show attributes of the logical volume(s)
 show attributes of the logical volume(s)  
 <code>lvscan</code>
 
-<b>Create Filesystem</b>
+<b>Create Filesystem</b>  
 create ext4 filesystem on logical volume(s)  
 <code>mkfs.ext4 /dev/data/data</code>
 
@@ -79,7 +79,7 @@ mount logical volume(s)
 check!  
 <code>df -h</code>
 
-<b>Add Logical Volumes to /etc/fstab</b>
+<b>Add Logical Volumes to /etc/fstab</b>  
 add logical volume(s) to /etc/fstab so they are mounted automatically on reboot  
 <code>echo "/dev/data/data /data ext4 defaults 0 0" >> /etc/fstab</code>
 
