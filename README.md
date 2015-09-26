@@ -18,6 +18,9 @@ check the exit code of the last command in a linux terminal.
 fork bomb (DANGER! DO NOT RUN THIS! - it will crash your system)  
 <code>:(){ :|: & };:</code>
 
+ps1 generator  
+https://www.kirsle.net/wizards/ps1.html
+
 # Java
 take java thread dump.  
 <java>jmap -dump:format=b,file=servername.hprof <pid></code>
@@ -79,3 +82,7 @@ check!
 <b>Add Logical Volumes to /etc/fstab</b>
 add logical volume(s) to /etc/fstab so they are mounted automatically on reboot  
 <code>echo "/dev/data/data /data ext4 defaults 0 0" >> /etc/fstab</code>
+
+# Fun Stuff
+Daniel H.C. Peterson aka dhcp  
+Bastard Operator From Hell aka BOFH - http://bofh.ntk.net/BOFH/
