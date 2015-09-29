@@ -83,6 +83,24 @@ check!
 add logical volume(s) to /etc/fstab so they are mounted automatically on reboot  
 <code>echo "/dev/data/data /data ext4 defaults 0 0" >> /etc/fstab</code>
 
+# Postgres  
+list databases  
+<code>\l</code>  
+
+switch databases  
+<code>\connect database_name</code> 
+
+list all tables in current database  
+<code>\dt</code>  
+
+quit / log out  
+<code>\q</code>  
+
+# SQL  
+show max connections  
+<code>show max_connections;</code>  
+
+
 # Fun Stuff
 Daniel H.C. Peterson aka dhcp  
 Bastard Operator From Hell aka BOFH - http://bofh.ntk.net/BOFH/
