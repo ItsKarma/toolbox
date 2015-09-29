@@ -83,6 +83,10 @@ check!
 add logical volume(s) to /etc/fstab so they are mounted automatically on reboot  
 <code>echo "/dev/data/data /data ext4 defaults 0 0" >> /etc/fstab</code>
 
+# Git  
+undo stuff  
+https://github.com/blog/2019-how-to-undo-almost-anything-with-git
+
 # Postgres  
 list databases  
 <code>\l</code>  
