@@ -3,10 +3,18 @@ Commands and stuff I use.
 
 # Docker
 remove all containers.  
-<code>docker rm $(docker ps -aq)</code>
+```docker rm $(docker ps -aq)```
 
 set docker-machine environment.  
-<code>docker-machine env</code>
+```docker-machine env```
+
+# Vagrant
+After updating vagrant you should also update the guest additions
+You can find them here: http://download.virtualbox.org/virtualbox/
+``` bash
+wget http://download.virtualbox.org/virtualbox/5.0.4/VBoxGuestAdditions_5.0.4.iso
+sudo mv VBoxGuestAdditions_5.0.4.iso /Applications/VirtualBox.app/Contents/MacOS/VBoxGuestAdditions.iso
+```
 
 # Linux
 unlock user account.  
