@@ -116,3 +116,4 @@ show max connections
 # Fun Stuff
 Daniel H.C. Peterson aka dhcp  
 Bastard Operator From Hell aka BOFH - http://bofh.ntk.net/BOFH/
+ya blew it gif - https://media.giphy.com/media/fpdql5AgW7ziM/giphy.gif
