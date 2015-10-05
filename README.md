@@ -108,12 +108,24 @@ list all tables in current database
 quit / log out  
 <code>\q</code>  
 
-# SQL  
+# SQL
 show max connections  
 <code>show max_connections;</code>  
 
+# Dev Tool Links
+RescueTime - https://www.rescuetime.com - tracks your time and productivity  
+Mou - http://25.io/mou/ - markdown editor  
+shiftit (mac osx) - https://github.com/fikovnik/ShiftIt - window shifting manager  
+Evernote - https://evernote.com/ - note taking  
+KeePassX - https://www.keepassx.org/ - encrypted password manager  
+Virtualbox - https://www.virtualbox.org/ - virtual machines  
+Docker - https://www.docker.com/ - containers  
+Jenkins - https://jenkins-ci.org/ - automation  
+Chef - https://www.chef.io/ - configuration management  
+Packer - https://packer.io/ - image management  
 
 # Fun Stuff
 Daniel H.C. Peterson aka dhcp  
-Bastard Operator From Hell aka BOFH - http://bofh.ntk.net/BOFH/
-ya blew it gif - https://media.giphy.com/media/fpdql5AgW7ziM/giphy.gif
+Bastard Operator From Hell aka BOFH - http://bofh.ntk.net/BOFH/  
+ya blew it gif - https://media.giphy.com/media/fpdql5AgW7ziM/giphy.gif  
+I don't always test my code - http://i.imgur.com/y7Hm9.jpg  
