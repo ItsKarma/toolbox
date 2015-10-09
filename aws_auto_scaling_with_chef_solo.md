@@ -22,8 +22,9 @@ If you read some of my other stuff on the web, you will see that I like having t
   * Snapshot the volume
 * When launching a new EC2 instance, attach a volume from this snapshot to /dev/sdk.
   * The ami launched should have an entry in /etc/fstab to mount /dev/sdk to /chef. This is required for further steps.
-* Provide a user-data script to run chef-client and choose the role for your desired server type.
-* Drink Beer.
+* EC2 user-data script to set environment and role.
+* init script to run chef-solo and choose the environment and role for your desired server type. Configure this to run on boot.
+* Drink.
 
 #### Commit code to chef-repo in GitHub
 This part is pretty self explanatory. I may elaborate on this in the future.
@@ -62,22 +63,35 @@ def create_demand_launch_config(lc_name, ami, key, sg, i_type, bdm, iam):
     return lc
 ```
 
-#### Provide user-data script to run chef-client
-
+#### EC2 user-data script creates the /etc/chef/solo.rb file and runs chef-solo
 ``` bash
-code
-code
-code
+#!/bin/bash
+
+# set some variables from the deploy script
+ENV=$env
+ROLE=leadid_$app.json
+
+# create /etc/chef directory
+mkdir -p /etc/chef
+
+# create solo.rb file
+cat /etc/chef/solo.rb << EOF
+environment_path '/chef/chef-repo/environments'
+role_path '/chef/chef-repo/roles'
+cookbook_path '/chef/chef-repo/cookbooks'
+data_bag_path '/chef/chef-repo/data_bags'
+json_attribs '/chef/chef-repo/json/$ROLE'
+file_backup_path '/chef/chef-repo/backup'
+file_cache_path '/chef/chef-repo/cache'
+environment '$ENV'
+log_level :info
+log_location STDOUT
+solo true
+umask 0022
+EOF
 ```
 
+#### cron script to run chef-solo @reboot
 ``` bash
-code
-code
-code
-```
-
-``` bash
-code
-code
-code
+@reboot /tmp/chef-solo.sh > /tmp/chef-solo.log
 ```
