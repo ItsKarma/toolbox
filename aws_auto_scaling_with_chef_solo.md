@@ -92,6 +92,7 @@ EOF
 ```
 
 #### cron script to run chef-solo @reboot
+In case we want to change the instance type of our server, without having to re-provision. We set this entry in the crontab to run chef-solo at reboot. This will update things like jvm heap and worker processes based on memory/cpu of the new instance.
 ``` bash
 @reboot /tmp/chef-solo.sh > /tmp/chef-solo.log
 ```
