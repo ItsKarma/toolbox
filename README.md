@@ -17,11 +17,20 @@ sudo mv VBoxGuestAdditions_5.0.4.iso /Applications/VirtualBox.app/Contents/MacOS
 ```
 
 # Linux
+generate epoch.  
+```date +%s```
+
+convert epoch to human readable time.
+``` bash
+# where 11111111 is your epoch
+date -d @11111111
+```
+
 unlock user account.  
-<code>pam_tally2 -r -u username</code>
+```pam_tally2 -r -u username```
 
 check the exit code of the last command in a linux terminal.  
-<code>echo $?</code>
+```echo $?```
 
 fork bomb (DANGER! DO NOT RUN THIS! - it will crash your system)  
 <code>:(){ :|: & };:</code>
