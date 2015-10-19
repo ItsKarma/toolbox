@@ -33,26 +33,33 @@ check the exit code of the last command in a linux terminal.
 ```echo $?```
 
 fork bomb (DANGER! DO NOT RUN THIS! - it will crash your system)  
-<code>:(){ :|: & };:</code>
+```:(){ :|: & };:```
 
 ps1 generator  
 https://www.kirsle.net/wizards/ps1.html
 
+# Networking
+tcpdump listen for all traffic on port 5000
+```tcpdump -i eth0 port 5000```
+
+tcpdump listen for all traffic from a specific source on port 80
+```tcpdump -i eth0 src 192.168.1.100 and port 8011```
+
 # Java
 take java thread dump.  
-<java>jmap -dump:format=b,file=servername.hprof <pid></code>
+```jmap -dump:format=b,file=servername.hprof <pid>```
 
 # sed
 creates a new line with "newtext" in the line above the matching pattern.  
-<code>sed '/quartzSchedulerControl/inewtext' /path/to/file</code>
+```sed '/quartzSchedulerControl/inewtext' /path/to/file```
 
 creates a new line with "newtext" 3 lines after the matching pattern.  
-<code>sed '/quartzSchedulerControl/!{p;d;};n;n;n;a newtext' /path/to/file</code>
+```sed '/quartzSchedulerControl/!{p;d;};n;n;n;a newtext' /path/to/file```
 
 # LVM
 <b>Physical Volume</b>  
 create the physical volume(s)  
-<code>pvcreate /dev/xvdf</code>
+```pvcreate /dev/xvdf```
 
 show the attributes of the physical volume(s)  
 <code>pvdisplay</code>
