@@ -139,6 +139,7 @@ Docker - https://www.docker.com/ - containers
 Jenkins - https://jenkins-ci.org/ - automation  
 Chef - https://www.chef.io/ - configuration management  
 Packer - https://packer.io/ - image management  
+Requestdiff - http://requestdiff.com/ - diff's http requests  
 
 # Fun Stuff
 Daniel H.C. Peterson aka dhcp  
