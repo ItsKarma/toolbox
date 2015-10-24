@@ -140,6 +140,7 @@ Jenkins - https://jenkins-ci.org/ - automation
 Chef - https://www.chef.io/ - configuration management  
 Packer - https://packer.io/ - image management  
 Requestdiff - http://requestdiff.com/ - diff's http requests  
+Google Power User - http://i.imgur.com/qmsBvjC.jpg - image of how to use google
 
 # Fun Stuff
 Daniel H.C. Peterson aka dhcp  
