@@ -47,7 +47,7 @@ tcpdump listen for all traffic from a specific source on port 80
 
 # Java
 take java thread dump.  
-```jmap -dump:format=b,file=servername.hprof <pid>```
+```jmap -dump:format=b,file=$(hostname).hprof <pid>```
 
 # sed
 creates a new line with "newtext" in the line above the matching pattern.  
@@ -130,7 +130,8 @@ show max connections
 
 # Dev Tool Links
 RescueTime - https://www.rescuetime.com - tracks your time and productivity  
-Mou - http://25.io/mou/ - markdown editor  
+Atom - http://atom.io - desktop editor (plugins: vim mode, markdown, minimap, git diff)  
+Mou - http://25.io/mou/ - markdown editor (now I use the markdown plugin for atom)  
 shiftit (mac osx) - https://github.com/fikovnik/ShiftIt - window shifting manager  
 Evernote - https://evernote.com/ - note taking  
 KeePassX - https://www.keepassx.org/ - encrypted password manager  
