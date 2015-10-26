@@ -147,5 +147,6 @@ Google Power User - http://i.imgur.com/qmsBvjC.jpg - image of how to use google
 Daniel H.C. Peterson aka dhcp  
 Bastard Operator From Hell aka BOFH - http://bofh.ntk.net/BOFH/  
 ya blew it gif - https://media.giphy.com/media/fpdql5AgW7ziM/giphy.gif  
-I don't always test my code - http://i.imgur.com/y7Hm9.jpg  
-99 problems 0 bitches - https://i.imgur.com/xlQZbYE.jpg
+I don't always test my code - https://i.imgur.com/y7Hm9.jpg  
+99 problems 0 bitches - https://i.imgur.com/xlQZbYE.jpg  
+99 little bugs in the code - https://i.imgur.com/HTisMpC.jpg  
