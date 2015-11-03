@@ -109,14 +109,17 @@ add logical volume(s) to /etc/fstab so they are mounted automatically on reboot
 
 # Git  
 undo stuff  
-https://github.com/blog/2019-how-to-undo-almost-anything-with-git
+https://github.com/blog/2019-how-to-undo-almost-anything-with-git  
+
+pretty format  
+```git log -1 --pretty=format:"%nCommit: %H%nAuthor: %an%nDate: %ad%nTag: %d%nSubject: %s%n%n"```  
 
 # Postgres  
 list databases  
 <code>\l</code>  
 
 switch databases  
-<code>\connect database_name</code> 
+<code>\connect database_name</code>  
 
 list all tables in current database  
 <code>\dt</code>  
