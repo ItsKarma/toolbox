@@ -144,7 +144,8 @@ Jenkins - https://jenkins-ci.org/ - automation
 Chef - https://www.chef.io/ - configuration management  
 Packer - https://packer.io/ - image management  
 Requestdiff - http://requestdiff.com/ - diff's http requests  
-Google Power User - http://i.imgur.com/qmsBvjC.jpg - image of how to use google
+Google Power User - http://i.imgur.com/qmsBvjC.jpg - image of how to use google  
+rss bot (mac osx) - https://itunes.apple.com/us/app/rss-bot-news-notifier/id605732865  
 
 # Fun Stuff
 Daniel H.C. Peterson aka dhcp  
