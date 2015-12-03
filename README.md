@@ -48,97 +48,97 @@ ps1 generator
 https://www.kirsle.net/wizards/ps1.html
 
 # Networking
-tcpdump listen for all traffic on port 5000
-```tcpdump -i eth0 port 5000```
+tcpdump listen for all traffic on port 5000  
+```tcpdump -i eth0 port 5000```  
 
-tcpdump listen for all traffic from a specific source on port 80
-```tcpdump -i eth0 src 192.168.1.100 and port 8011```
+tcpdump listen for all traffic from a specific source on port 80  
+```tcpdump -i eth0 src 192.168.1.100 and port 8011```  
 
-# Java
+# Java  
 take java thread dump.  
-```jmap -dump:format=b,file=$(hostname).hprof <pid>```
+```jmap -dump:format=b,file=$(hostname).hprof <pid>```  
 
-# sed
+# sed  
 creates a new line with "newtext" in the line above the matching pattern.  
-```sed '/quartzSchedulerControl/inewtext' /path/to/file```
+``sed '/quartzSchedulerControl/inewtext' /path/to/file``  
 
 creates a new line with "newtext" 3 lines after the matching pattern.  
-```sed '/quartzSchedulerControl/!{p;d;};n;n;n;a newtext' /path/to/file```
+``sed '/quartzSchedulerControl/!{p;d;};n;n;n;a newtext' /path/to/file``  
 
-# LVM
+# LVM  
 <b>Physical Volume</b>  
 create the physical volume(s)  
-```pvcreate /dev/xvdf```
+``pvcreate /dev/xvdf``  
 
 show the attributes of the physical volume(s)  
-<code>pvdisplay</code>
+``pvdisplay``  
 
 <b>Volume Group</b>  
 creates volume group called “data” using the physical volume(s) shown  
-<code>vgcreate data /dev/xvdf</code>
+``vgcreate data /dev/xvdf``  
 
 show attributes of “data” volume group  
-<code>vgdisplay</code>
+``vgdisplay``  
 
 show attributes of “data” volume group  
-<code>vgdisplay -s</code>
+``vgdisplay -s``  
 
 scan physical volumes  
-<code>vgscan</code>
+``vgscan``  
 
 <b>Logical Volume</b>  
 create the logical volume named “data” from the “data” volume group  
-<code>lvcreate --name data --size 99G data (leave 1% out)</code>
+``lvcreate --name data --size 99G data (leave 1% out)``  
 
 show attributes of the logical volume(s)  
-<code>lvdisplay</code>
+``lvdisplay``  
 
 show attributes of the logical volume(s)  
-<code>lvdisplay -C</code>
+``lvdisplay -C``  
 
 show attributes of the logical volume(s)  
-<code>lvscan</code>
+``lvscan``  
 
 <b>Create Filesystem</b>  
 create ext4 filesystem on logical volume(s)  
-<code>mkfs.ext4 /dev/data/data</code>
+``mkfs.ext4 /dev/data/data``
 
 create mount point(s)  
-<code>mkdir -p /data</code>
+``mkdir -p /data``
 
 mount logical volume(s)  
-<code>mount /dev/data/data /data/log</code>
+``mount /dev/data/data /data/log``
 
 check!  
-<code>df -h</code>
+``df -h``
 
 <b>Add Logical Volumes to /etc/fstab</b>  
 add logical volume(s) to /etc/fstab so they are mounted automatically on reboot  
-<code>echo "/dev/data/data /data ext4 defaults 0 0" >> /etc/fstab</code>
+``echo "/dev/data/data /data ext4 defaults 0 0" >> /etc/fstab``
 
 # Git  
 undo stuff  
 https://github.com/blog/2019-how-to-undo-almost-anything-with-git  
 
 pretty format  
-```git log -1 --pretty=format:"%nCommit: %H%nAuthor: %an%nDate: %ad%nTag: %d%nSubject: %s%n%n"```  
+``git log -1 --pretty=format:"%nCommit: %H%nAuthor: %an%nDate: %ad%nTag: %d%nSubject: %s%n%n"``  
 
 # Postgres  
 list databases  
-<code>\l</code>  
+``\l``  
 
 switch databases  
-<code>\connect database_name</code>  
+``\connect database_name``   
 
 list all tables in current database  
-<code>\dt</code>  
+``\dt``  
 
 quit / log out  
-<code>\q</code>  
+``\q``    
 
 # SQL
 show max connections  
-<code>show max_connections;</code>  
+``show max_connections;``  
 
 # Dev Tool Links
 RescueTime - https://www.rescuetime.com - tracks your time and productivity  
