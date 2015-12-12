@@ -3,10 +3,10 @@ Commands and stuff I use.
 
 # Docker
 remove all containers.  
-```docker rm $(docker ps -aq)```
+``docker rm $(docker ps -aq)``
 
 set docker-machine environment.  
-```docker-machine env```
+``docker-machine env``
 
 # Vagrant
 After updating vagrant you should also update the guest additions
@@ -18,7 +18,7 @@ sudo mv VBoxGuestAdditions_5.0.4.iso /Applications/VirtualBox.app/Contents/MacOS
 
 # Linux
 generate epoch.  
-```date +%s```
+``date +%s``
 
 convert epoch to human readable time.
 ``` bash
@@ -27,36 +27,41 @@ date -d @11111111
 ```  
 
 start a screen.  
-```screen -s screen_name```  
+``screen -s screen_name``  
 detach from a screen.  
-```ctrl+a d```  
+``ctrl+a d``  
 show running screens.  
-```screen -r```  
+``screen -r``  
 reattach to a running screen.  
-```screen -r screen_name```  
+``screen -r screen_name``  
 
 unlock user account.  
-```pam_tally2 -r -u username```  
+``pam_tally2 -r -u username``  
 
 check the exit code of the last command in a linux terminal.  
-```echo $?```  
+``echo $?``  
 
 fork bomb (DANGER! DO NOT RUN THIS! - it will crash your system)  
-```:(){ :|: & };:```
+``:(){ :|: & };:``
 
 ps1 generator  
 https://www.kirsle.net/wizards/ps1.html
 
 # Networking
 tcpdump listen for all traffic on port 5000  
-```tcpdump -i eth0 port 5000```  
+``tcpdump -i eth0 port 5000``  
 
 tcpdump listen for all traffic from a specific source on port 80  
-```tcpdump -i eth0 src 192.168.1.100 and port 8011```  
+``tcpdump -i eth0 src 192.168.1.100 and port 8011``  
 
 # Java  
 take java thread dump.  
-```jmap -dump:format=b,file=$(hostname).hprof <pid>```  
+``jmap -dump:format=b,file=$(hostname).hprof <pid>``  
+
+# PHP  
+adjusting php children  
+http://myshell.co.uk/blog/2012/07/adjusting-child-processes-for-php-fpm-nginx/  
+
 
 # sed  
 creates a new line with "newtext" in the line above the matching pattern.  
