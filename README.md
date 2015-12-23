@@ -52,7 +52,10 @@ tcpdump listen for all traffic on port 5000
 ``tcpdump -i eth0 port 5000``  
 
 tcpdump listen for all traffic from a specific source on port 80  
-``tcpdump -i eth0 src 192.168.1.100 and port 8011``  
+``tcpdump -i eth0 src 192.168.1.100 and port 80`` 
+
+tcpdump listen for all traffic on port 80 and write to file to view later in wireshark  
+``tcpdump -i eth0 src 192.168.1.100 and port 80 -w server.pcap``  
 
 # Java  
 take java thread dump.  
