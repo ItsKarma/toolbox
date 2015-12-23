@@ -160,6 +160,7 @@ Packer - https://packer.io/ - image management
 Requestdiff - http://requestdiff.com/ - diff's http requests  
 Google Power User - http://i.imgur.com/qmsBvjC.jpg - image of how to use google  
 rss bot (mac osx) - https://itunes.apple.com/us/app/rss-bot-news-notifier/id605732865  
+EC2 Instances http://www.ec2instances.info/  
 
 # Fun Stuff
 Daniel H.C. Peterson aka dhcp  
