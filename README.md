@@ -60,6 +60,7 @@ tcpdump listen for all traffic on port 80 and write to file to view later in wir
 # Java  
 take java thread dump.  
 ``jmap -dump:format=b,file=$(hostname).hprof <pid>``  
+``kill -3 <pid>``  
 
 # PHP  
 adjusting php children  
