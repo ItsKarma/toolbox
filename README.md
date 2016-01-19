@@ -169,6 +169,7 @@ HTTP Statuses - https://httpstatuses.com/ - simple list of http status codes
 Google Power User - http://i.imgur.com/qmsBvjC.jpg - image of how to use google  
 rss bot (mac osx) - https://itunes.apple.com/us/app/rss-bot-news-notifier/id605732865  
 EC2 Instances http://www.ec2instances.info/  
+Disk Inventory X - http://www.derlien.com/ - graphical way to visualize disk space on your mac
 
 # Fun Stuff
 Daniel H.C. Peterson aka dhcp  
