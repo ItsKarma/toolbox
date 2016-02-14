@@ -164,12 +164,14 @@ Docker - https://www.docker.com/ - containers
 Jenkins - https://jenkins-ci.org/ - automation  
 Chef - https://www.chef.io/ - configuration management  
 Packer - https://packer.io/ - image management  
+terraform - https://www.terraform.io/ - infrastructure as code  
 Requestdiff - http://requestdiff.com/ - diff's http requests  
 HTTP Statuses - https://httpstatuses.com/ - simple list of http status codes  
 Google Power User - http://i.imgur.com/qmsBvjC.jpg - image of how to use google  
 rss bot (mac osx) - https://itunes.apple.com/us/app/rss-bot-news-notifier/id605732865  
 EC2 Instances http://www.ec2instances.info/  
-Disk Inventory X - http://www.derlien.com/ - graphical way to visualize disk space on your mac
+Disk Inventory X - http://www.derlien.com/ - graphical way to visualize disk space on your mac  
+saws - https://github.com/donnemartin/saws - A supercharged AWS command line interface
 
 # Fun Stuff
 Daniel H.C. Peterson aka dhcp  
