@@ -153,6 +153,7 @@ show max connections
 ``show max_connections;``  
 
 # Dev Tool Links
+Homebrew - brew.sh
 RescueTime - https://www.rescuetime.com - tracks your time and productivity  
 Atom - http://atom.io - desktop editor (plugins: vim mode, markdown, minimap, git diff)  
 Mou - http://25.io/mou/ - markdown editor (now I use the markdown plugin for atom)  
