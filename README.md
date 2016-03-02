@@ -48,7 +48,7 @@ debug core dumps.
 ``gdb -c core.xxxx``  
 backtrace  
 ``(gdb) bt``  
-list instructions/code
+list instructions/code  
 ``(gdb) list``  
 
 find files that were most recently modified.  
