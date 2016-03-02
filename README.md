@@ -42,10 +42,20 @@ check the exit code of the last command in a linux terminal.
 ``echo $?``  
 
 fork bomb (DANGER! DO NOT RUN THIS! - it will crash your system)  
-``:(){ :|: & };:``
+``:(){ :|: & };:``  
+
+debug core dumps.  
+``gdb -c core.xxxx``  
+backtrace  
+``(gdb) bt``  
+list instructions/code
+``(gdb) list``  
+
+find files that were most recently modified.  
+``find . -type f | xargs stat --format '%Y :%y %n' | sort -nr | cut -d: -f2- | head``  
 
 ps1 generator  
-https://www.kirsle.net/wizards/ps1.html
+https://www.kirsle.net/wizards/ps1.html  
 
 # Networking
 tcpdump listen for all traffic on port 5000  
